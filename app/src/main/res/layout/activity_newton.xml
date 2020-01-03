@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".NewtonActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan parameter"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_x"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:digits="0123456789-."
+            android:layout_weight="1"
+            android:hint="x.."/>
+        <EditText
+            android:id="@+id/edt_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:digits="0123456789-."
+            android:hint="error.."/>
+        <EditText
+            android:id="@+id/edt_n"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="iterasi.."/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hitung"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"/>
+    <ListView
+        android:id="@+id/lv_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
